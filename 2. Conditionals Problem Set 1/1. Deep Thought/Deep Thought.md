@@ -34,6 +34,7 @@ In deep.py, implement a program that prompts the user for the answer to the Grea
 * It’s okay if your output or the user’s wraps onto multiple lines.
 
 ## How to Test
+
 #### Here’s how to test your code manually:
 
 * Run your program with python deep.py. Type 42 and press Enter. Your program should output:
