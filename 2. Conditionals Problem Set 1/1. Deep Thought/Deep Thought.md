@@ -20,3 +20,15 @@ In deep.py, implement a program that prompts the user for the answer to the Grea
 **Hints**
 * No need to convert the user’s input to an int if you check for equality with "42", a str, rather than 42, an int!
 * It’s okay if your output or the user’s wraps onto multiple lines.
+
+## How to Test
+#### Here’s how to test your code manually:
+
+* Run your program with python deep.py. Type 42 and press Enter. Your program should output:
+Yes 
+* Run your program with python deep.py. Type Forty Two and press Enter. Your program should output:
+Yes
+* Run your program with python deep.py. Type forty-two and press Enter. Your program should output
+Yes
+* Run your program with python deep.py. Type 50 and press Enter. Your program should output
+No
