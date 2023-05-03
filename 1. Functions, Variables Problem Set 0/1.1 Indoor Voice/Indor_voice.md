@@ -9,8 +9,8 @@ Hints
 Recall that [input] returns a str, per # https://docs.python.org/3/library/functions.html#input.
 Recall that a [str] comes with quite a few methods, per # https://docs.python.org/3/library/stdtypes.html#string-methods.
 
-# How to Test
-# Here’s how to test your code manually. At the indoor/ $ prompt in your terminal: :
+#### How to Test
+#### Here’s how to test your code manually. At the indoor/ $ prompt in your terminal: :
 
 * Run your program with python [indoor.py]. Type [HELLO] and press Enter. Your program should output hello.
 * Run your program with python [indoor.py]. Type [THIS IS CS50] and press Enter. Your program should output this is cs50.
