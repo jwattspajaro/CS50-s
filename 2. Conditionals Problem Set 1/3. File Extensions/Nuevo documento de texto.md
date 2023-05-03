@@ -19,7 +19,7 @@ If the file’s name ends with some other suffix or has no suffix at all, output
 
 **Hints**
 ------------------------------------
-Recall that a str comes with quite a few methods, per #https.//docs.python.org/3/library/stdtypes.html#string-methods.
+Recall that a str comes with quite a few methods, per #https://docs.python.org/3/library/stdtypes.html#string-methods.
 **How to Test
 Here’s how to test your code manually:
 
