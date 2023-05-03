@@ -8,3 +8,13 @@
 * Recall that input returns a str, per # https://docs.python.org/3/library/functions.html#input.
 * Recall that int can convert a str to an int, per  # https://docs.python.org/3/library/functions.html#int.
 * Recall that Python comes with several built-in functions, per  # https://docs.python.org/3/library/functions.html.
+
+## How to Test
+* Here’s how to test your code manually:
+
+* Run your program with python einstein.py. Type 1 and press Enter. Your program should output:
+90000000000000000
+* Run your program with python einstein.py. Type 14 and press Enter. Your program should output:
+1260000000000000000
+* Run your program with python einstein.py. Type 50 and press Enter. Your program should output
+4500000000000000000
