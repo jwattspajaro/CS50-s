@@ -8,3 +8,13 @@
 * Recall that input returns a str, per #https://docs.python.org/3/library/functions.html#input.
 * Recall that a str comes with quite a few methods, per #https://docs.python.org/3/library/stdtypes.html#string-methods.
 * An emoji is actually just a character, so you can quote it like any str, a la "😐". And you can copy and paste the emoji from this page into your own code as needed.
+
+## How to Test
+### Here’s how to test your code manually:
+
+* Run your program with python faces.py. Type Hello :) and press Enter. Your program should output:
+| Hello 🙂 
+* Run your 4program with python faces.py. Type Goodbye :( and press Enter. Your program should output:
+| Goodbye 🙁 |
+* Run your program with python faces.py. Type Hello :) Goodbye :( and press Enter. Your program should output
+| Hello 🙂 Goodbye 🙁 |
