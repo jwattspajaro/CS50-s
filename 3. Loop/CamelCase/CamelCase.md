@@ -12,7 +12,7 @@ Source: en.wikipedia.org/wiki/Camel_case
 * Much like a list, a str is “iterable,” which means you can iterate over each of its characters in a loop. For instance, if s is a str, you could print each of its characters, one at a time, with code like:
 ****
 
-'''Python
+```python
   for c in s:
       print(c, end="")
-'''
+```
