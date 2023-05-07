@@ -13,10 +13,10 @@ Here’s how to test your code manually:
 
 * Run your program with python twttr.py. Type Twitter and press Enter. Your program should output:
 
-**Twttr   **
+  **Twttr**
 * Run your program with python twttr.py. Type What's your name? and press Enter. Your program should output:
 
-**Wht's yr nm?**
+  **Wht's yr nm?**
 * Run your program with python twttr.py. Type CS50 and press Enter. Your program should output
 
-**CS50**
+  **CS50**
