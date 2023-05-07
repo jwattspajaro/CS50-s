@@ -16,3 +16,12 @@ Source: en.wikipedia.org/wiki/Camel_case
   for c in s:
       print(c, end="")
 ```
+### How to Test
+#### Here’s how to test your code manually:
+
+* Run your program with python camel.py. Type name and press Enter. Your program should output:
+**name**   
+* Run your program with python camel.py. Type firstName and press Enter. Your program should output:
+**first_name**
+* Run your program with python camel.py. Type preferredFirstName and press Enter. Your program should output
+**preferred_first_name**
