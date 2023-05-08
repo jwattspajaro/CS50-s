@@ -44,7 +44,7 @@ Here’s how to test your code manually:
     **Invalid**
 * Run your program with python plates.py. Type H and press Enter. Your program should output
 
-**Invalid**
+    **Invalid**
 * Run your program with python plates.py. Type OUTATIME and press Enter. Your program should output
 
     **Invalid**
