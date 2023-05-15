@@ -28,6 +28,7 @@ Note that the requests module comes with quite a few methods, per [requests.read
     pip install requests
     
 Note that CoinDesk’s API returns a JSON response like:
+
 ```python
 {
    "time":{
@@ -61,4 +62,21 @@ Note that CoinDesk’s API returns a JSON response like:
       }
    }
 }
+
 ```
+### How to Test
+#### Here’s how to test your code manually:
+
+⚫ Run your program with python bitcoin.py. Your program should use sys.exit to exit with an error message:
+
+        Missing command-line argument   
+        
+⚫ Run your program with python bitcoin.py cat. Your program should use sys.exit to exit with an error message:
+
+        Command-line argument is not a number
+        
+⚫ Run your program with python bitcoin.py 1. Your program should output the price of a single Bitcoin to four decimal places, using , as a thousands separator.
+
+⚫ Run your program with python bitcoin.py 2. Your program should output the price of two Bitcoin to four decimal places, using , as a thousands separator.
+
+⚫ Run your program with python bitcoin.py 2.5. Your program should output the price of 2.5 Bitcoin to four decimal places, using , as a thousands separator.
