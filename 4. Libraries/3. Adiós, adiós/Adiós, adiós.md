@@ -4,7 +4,7 @@
 
     Adieu, adieu, a yieu y yieu y yieu
 
-    Por supuesto, la línea no es gramaticalmente correcta, ya que normalmente se escribiría (con una [coma de Oxford](https://en.wikipedia.org/wiki/Serial_comma) ) como:
+ Por supuesto, la línea no es gramaticalmente correcta, ya que normalmente se escribiría (con una [coma de Oxford](https://en.wikipedia.org/wiki/Serial_comma) ) como:
 
     Adieu, adieu, a yieu, yieu, y yieu
 
@@ -24,4 +24,20 @@ comas y uno and, como se muestra a continuación:
 
 **Sugerencias**
 Tenga en cuenta que el inflectmódulo viene con bastantes métodos, según [pypi.org/project/inflect](https://pypi.org/project/inflect/) . Puedes instalarlo con:
-pip install inflect
+
+        pip install inflect
+        
+### Cómo probar
+**Aquí le mostramos cómo probar su código manualmente:**
+
+⚫ Ejecute su programa con python adieu.py. Escribe Liesly presiona Enter, seguido de control-d. Su programa debe producir:
+
+        Adieu, adieu, to Liesl 
+        
+⚫  Ejecute su programa con python adieu.py. Escriba Liesly presione Entrar, luego escriba Friedrichy presione Entrar, seguido de control-d. Su programa debe producir:
+
+        Adieu, adieu, to Liesl and Friedrich
+        
+⚫  Ejecute su programa con python adieu.py. Escriba Liesly presione Entrar, luego escriba Friedrichy presione Entrar. Ahora escribe Louisay presiona Enter, seguido de control-d. Su programa debe producir:
+
+        Adieu, adieu, to Liesl, Friedrich, and Louisa
