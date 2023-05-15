@@ -8,14 +8,14 @@
 
 3.Submit all of the problems below:
 
-⚫ Lines of Code
+⚫ [Lines of Code](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Lines%20of%20Code)
 
 ⚫ [Pizza Py](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Pizza%20Py)
 
 ⚫ [Scourgify](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Scourgify)
 
-⚫ CS50 P-Shirt
+⚫ [CS50 P-Shirt](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/CS50%20P-Shirt)
 
-⚫ When to Do It
+When to Do It
 
 By Sunday, December 31, 2023 at 11:59 PM GMT-5.
