@@ -12,7 +12,7 @@
 
 ⚫ Pizza Py
 
-⚫ Scourgify
+⚫ [Scourgify](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Scourgify)
 
 ⚫ CS50 P-Shirt
 
