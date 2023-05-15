@@ -10,7 +10,7 @@
 
 ⚫ Lines of Code
 
-⚫ Pizza Py
+⚫ [Pizza Py](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Pizza%20Py)
 
 ⚫ [Scourgify](https://github.com/jwattspajaro/CS50-s/tree/main/6.%20File%20IO/Scourgify)
 
