@@ -1,63 +1,75 @@
-### Guessing Game
-#### I’m thinking of a number between 1 and 100…
+### Little Professor
 
-**What is it?**
-In a file called game.py, implement a program that:
+One of David’s first toys as a child, funny enough, was [Little Professor](https://en.wikipedia.org/wiki/Little_Professor), a “calculator” that would generate ten different math problems for David to solve. For instance, if the toy were to display 4 + 0 = , David would (hopefully) answer with 4. If the toy were to display 4 + 1 = , David would (hopefully) answer with 5. If David were to answer incorrectly, the toy would display EEE. And after three incorrect answers for the same problem, the toy would simply display the correct answer (e.g., 4 + 0 = 4 or 4 + 1 = 5).
 
-⚫ Prompts the user for a level, 
-. If the user does not input a positive integer, the program should prompt again.
+In a file called professor.py, implement a program that:
 
-⚫ Randomly generates an integer between 1 and 
-, inclusive, using the random module.
+Prompts the user for a level, 
+. If the user does not input 1, 2, or 3, the program should prompt again.
 
-⚫ Prompts the user to guess that integer. If the guess is not a positive integer, the program should prompt the user again.
+#### Randomly generates ten (10) math problems formatted as X + Y = , wherein each of X and Y is a non-negative integer with 
+ digits. No need to support operations other than addition (+).
+ 
+⚫ Prompts the user to solve each of those problems. If an answer is not correct (or not even a number), the program should output EEE and prompt the user again, allowing the user up to three tries in total for that problem. If the user has still not answered correctly after three tries, the program should output the correct answer.
 
-    ⚫ If the guess is smaller than that integer, the program should output Too small! and prompt the user again.
+⚫ The program should ultimately output the user’s score: the number of correct answers out of 10.
+
+⚫ Structure your program as follows, wherein get_level prompts (and, if need be, re-prompts) the user for a level and returns 1, 2, or 3, and generate_integer returns a randomly generated non-negative integer with level digits or raises a ValueError if level is not 1, 2, or 3:
+
+```python
+import random
+
+
+def main():
+    ...
+
+
+def get_level():
+    ...
+
+
+def generate_integer(level):
+    ...
+
+
+if __name__ == "__main__":
+    main()
+```
     
-    ⚫ If the guess is larger than that integer, the program should output Too large! and prompt the user again.
-    
-    ⚫ If the guess is the same as that integer, the program should output Just right! and exit.
-    
-#### Hints
-#### Note that the random module comes with quite a few functions, per [docs.python.org/3/library/random.html](https://docs.python.org/3/library/random.html).
+**Hints**
+⚫ Note that you can raise an exception like ValueError with code like:
 
-**How to Test**
+        raise ValueError
+        
+Note that the random module comes with quite a few functions, per [docs.python.org/3/library/random.html.](https://docs.python.org/3/library/random.html)
+
+Demo
+
+### How to Test
 #### Here’s how to test your code manually:
 
-⚫ Run your program with python game.py. Type cat at a prompt that says Level: and press Enter. Your program should reprompt you:
+⚫ Run your program with python professor.py. Type -1 and press Enter. Your program should reprompt you:
 
-    Level:
-    
-⚫ Run your program with python game.py. Type -1 at a prompt that says Level: and press Enter. Your program should reprompt you:
+        Level:   
+        
+⚫ Run your program with python professor.py. Type 4 and press Enter. Your program should reprompt you:
 
-    Level:
-    
-⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Your program should now be ready to accept guesses:
+        Level:   
+        
+⚫ Run your program with python professor.py. Type 1 and press Enter. Your program should begin posing addition problems with positive, single-digit integers. For example:
 
-    Guess:
-    
-R⚫ un your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type cat. Your program should reprompt you:
+        6 + 6 =    
+ Your program should output 10 distinct problems before printing the number of questions you answered correctly and exiting.
 
-    **Guess:**
-    
-⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type -1. Your program should reprompt you:
 
-    Guess:
-    
-⚫ Run your program with python game.py. Type 1 at a prompt that says Level: and press Enter. Then type 1. Your program should output:
+⚫ Run your program with python professor.py. Type 1 and press Enter. Answer the first question incorrectly. Your program should output:
 
-|   Just right!
+        EEE
+before reprompting you with the same question.
 
-There’s only one possible number the answer could be!
+⚫ Run your program with python professor.py. Type 1 and press Enter. Answer the first question incorrectly, three times. Your program should output the correct answer. For example:
 
-⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type 100. Your program should output:
+        6 + 6 = 12
+and then move on to another question. Answer the remaining questions correctly. Your program should output a score of 9.
 
-    Too large!
-    
-Looks like you’re guessing outside the range you specified.
-
-⚫ Run your program with python game.py. Type 10000 at a prompt that says Level: and press Enter. Then type 1. Your program should output:
-Too small! 
-Most likely, anyways: you might get lucky and see Just right!. But it would certainly be odd for you to see Just right! every time. And certainly you shouldn’t see Too    
-   
-   large!.
+⚫ Run your program with python professor.py. Type 1 and press Enter. Answer all 10 questions correctly. Your program should output a score of 10.
