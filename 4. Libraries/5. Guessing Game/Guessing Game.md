@@ -26,37 +26,38 @@ In a file called game.py, implement a program that:
 
 ⚫ Run your program with python game.py. Type cat at a prompt that says Level: and press Enter. Your program should reprompt you:
 
-    5
-    Level:   
+    **Level:**
+    
 ⚫ Run your program with python game.py. Type -1 at a prompt that says Level: and press Enter. Your program should reprompt you:
 
-    Level:   
+    **Level:**
     
 ⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Your program should now be ready to accept guesses:
 
-    Guess:   
+    **Guess:**
     
 R⚫ un your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type cat. Your program should reprompt you:
 
-    Guess:   
+    **Guess:**
     
 ⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type -1. Your program should reprompt you:
 
-    Guess:   
+    **Guess:**
     
 ⚫ Run your program with python game.py. Type 1 at a prompt that says Level: and press Enter. Then type 1. Your program should output:
 
-|   Just right!  
+|   **Just right!**
 
 There’s only one possible number the answer could be!
 
 ⚫ Run your program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type 100. Your program should output:
 
-    Too large!  
+    **Too large!**
     
 Looks like you’re guessing outside the range you specified.
 
 ⚫ Run your program with python game.py. Type 10000 at a prompt that says Level: and press Enter. Then type 1. Your program should output:
 Too small! 
 Most likely, anyways: you might get lucky and see Just right!. But it would certainly be odd for you to see Just right! every time. And certainly you shouldn’t see Too    
-    large!.
+   
+   **large!.**
