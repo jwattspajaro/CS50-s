@@ -85,3 +85,21 @@ If the user does not provide exactly two command-line arguments, or if the first
 ### Hints
 - Note that csv module comes with quite a few methods, per **https://docs.python.org/3/library/csv.html**, among which are DictReader, per **https://docs.python.org/3/library/csv.html#csv.DictReader** and DictWriter, per **https://docs.python.org/3/library/csv.html#csv.DictWriter.**
 - Note that you can tell a DictWriter to write its fieldnames to a file using writeheader with no arguments, per **https://docs.python.org/3/library/csv.html#csv.DictWriter.writeheader.**
+
+### How to Test
+Here’s how to test your code manually:
+
+- Run your program with python scourgify.py. Your program should exit using sys.exit and provide an error message:
+
+        Too few command-line arguments
+- Create empty files 1.csv, 2.csv, and 3.csv. Run your program with python scourgify.py 1.csv 2.csv 3.csv. Your program should output:
+
+        Too many command-line arguments
+
+- Run your program with python scourgify.py invalid_file.csv output.csv. Assuming invalid_file.csv doesn’t exist, your program should exit using sys.exit and provide an error message:
+
+        Could not read invalid_file.csv
+
+- Run your program with python scourgify.py before.csv after.csv. Assuming before.csv exists, your program should create a new file, after.csv, whose columns should be, in order, first, last, and house.
+
+You can execute the below to check your code using check50, a program that CS50 will use to test your code when you submit. But be sure to test it yourself as well!
