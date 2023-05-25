@@ -1,4 +1,6 @@
 ### Problem Set 6
+#### Video: https://youtu.be/KD-Yoel6EVQ
+#### Read: https://cs50.harvard.edu/python/2022/weeks/6/
 
 #### What to Do
 
