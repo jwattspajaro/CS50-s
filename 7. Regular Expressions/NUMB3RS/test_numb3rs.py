@@ -15,7 +15,6 @@ def test_validate():
     assert validate("199.911.288.882") == False
     
 #El código importa la función validate desde el archivo numb3rs.py utilizando la instrucción from numb3rs import validate.
-
 #A continuación, se define la función test_validate que se encarga de realizar pruebas para validar la función validate.
-
-#En las pruebas, se utilizan aserciones (assert) para verificar si la función validate devuelve el resultado esperado para diferentes casos de prueba. Se comprueba si la función devuelve True para direcciones IPv4 válidas y se comprueba si devuelve False para direcciones IPv4 no válidas.
+#En las pruebas, se utilizan aserciones (assert) para verificar si la función validate devuelve el resultado esperado para diferentes casos de prueba. 
+# Se comprueba si la función devuelve True para direcciones IPv4 válidas y se comprueba si devuelve False para direcciones IPv4 no válidas.
