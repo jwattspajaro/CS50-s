@@ -31,9 +31,9 @@ Either before or after you implement count in um.py, additionally implement, in 
     pytest test_um.py
 
 #### Hints
-- **Recall that the re module comes with quite a few functions, per docs.python.org/3/library/re.html, including findall.**
-- **Recall that regular expressions support quite a few special characters, per docs.python.org/3/library/re.html#regular-expression-syntax.**
+- **Recall that the re module comes with quite a few functions, per https://docs.python.org/3/library/re.html, including findall.**
+- **Recall that regular expressions support quite a few special characters, per https://docs.python.org/3/library/re.html#regular-expression-syntax.**
 - **Because backslashes in regular expressions could be mistaken for escape sequences (like \n), best to use Python’s raw string notation for regular expression patterns. Just as format strings are prefixed with f, so are raw strings prefixed with r. For instance, instead of "harvard\.edu", use r"harvard\.edu".**
-- **Note that \b is “defined as the boundary between a \w and a \W character (or vice versa), or between \w at the beginning/end of the string,” per docs.python.org/3/library/re.html#regular-expression-syntax.**
+- **Note that \b is “defined as the boundary between a \w and a \W character (or vice versa), or between \w at the beginning/end of the string,” per https://docs.python.org/3/library/re.html#regular-expression-syntax.**
 - **You might find regex101.com or regexr.com helpful for testing regular expressions (and visualizing matches).**
-- **See thefreedictionary.com/words-containing-um for some words that contain “um”.**
+- **See https://thefreedictionary.com/words-containing-um for some words that contain “um”.**
