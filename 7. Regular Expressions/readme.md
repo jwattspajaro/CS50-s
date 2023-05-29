@@ -4,6 +4,18 @@
 #### https://cs50.harvard.edu/python/2022/weeks/7/
 #### ejercicios: https://cdn.cs50.net/python/2022/x/lectures/7/src7/
 
+Problem Set 7
+What to Do
+Log into code.cs50.io, which is a cloud-based version of Visual Studio Code (VS Code) that provides you with your very own “codespace” with everything that you need for the course pre-installed. No need to download and install VS Code or Python on your own Mac or PC!
+Execute update50 in your codespace’s terminal window to ensure that your codespace is up-to-date; if prompted, click Rebuild now.
+Submit all of the problems below:
+
+- [**NUMB3RS**](https://github.com/jwattspajaro/CS50-s/tree/main/7.%20Regular%20Expressions/NUMB3RS)
+- **[Watch on YouTube](https://github.com/jwattspajaro/CS50-s/tree/main/7.%20Regular%20Expressions/Watch%20on%20YouTube)**
+- **[Working 9 to 5](https://github.com/jwattspajaro/CS50-s/tree/main/7.%20Regular%20Expressions/Working%209%20to%205)**
+- **[Regular, um, Expressions](https://github.com/jwattspajaro/CS50-s/tree/main/7.%20Regular%20Expressions/Regular%2C%20um%2C%20Expressions)**
+- **[Response Validation](https://github.com/jwattspajaro/CS50-s/tree/main/7.%20Regular%20Expressions/Response%20Validation)**
+
 Las expresiones regulares en Python son una poderosa herramienta para trabajar con patrones en cadenas de texto. Te explicaré cómo funcionan las expresiones regulares en Python:
 
 Importar el módulo re: Para utilizar expresiones regulares en Python, primero debes importar el módulo re. Puedes hacerlo con la siguiente línea de código: import re.
