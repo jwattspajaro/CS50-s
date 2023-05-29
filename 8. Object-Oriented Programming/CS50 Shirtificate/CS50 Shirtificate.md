@@ -27,3 +27,13 @@ pip install fpdf2
 - Note that a cell’s height can be negative, to move it upward.
 You can open shirtificate.pdf, once outputted, by clicking it in VS Code’s file explorer.
 
+#### How to Test
+Here’s how to test your code manually:
+
+- Run your program with shirtificate.py. Make sure your program prompts you for a name. Enter your own name and press Enter. Your program should create a file,             shirtificate.pdf, containing the name you entered as input overlaid on a rendering of shirtificate.png.
+- Try a few other names for good measure, too!
+You can execute the below to check your code using check50, a program that CS50 will use to test your code when you submit. But be sure to test it yourself as well!
+
+check50 cs50/problems/2022/python/shirtificate
+Green smilies mean your program has passed a test! Red frownies will indicate your program output something unexpected. Visit the URL that check50 outputs to see the input check50 handed to your program, what output it expected, and what output your program actually gave.
+
