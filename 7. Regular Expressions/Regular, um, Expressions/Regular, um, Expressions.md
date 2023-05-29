@@ -37,3 +37,19 @@ Either before or after you implement count in um.py, additionally implement, in 
 - **Note that \b is “defined as the boundary between a \w and a \W character (or vice versa), or between \w at the beginning/end of the string,” per https://docs.python.org/3/library/re.html#regular-expression-syntax.**
 - **You might find regex101.com or regexr.com helpful for testing regular expressions (and visualizing matches).**
 - **See https://thefreedictionary.com/words-containing-um for some words that contain “um”.**
+
+### How to Test
+#### How to Test um.py
+Here’s how to test um.py manually:
+
+- Run your program with python um.py. Ensure your program prompts you for an input. Type um, followed by Enter. Your count function should return 1.
+- Run your program with python um.py. Type um?, followed by Enter. Your count function should return 1.
+- Run your program with python um.py. Type Um, thanks for the album., followed by Enter. Your count function should return 1.
+- Run your program with python um.py. Type Um, thanks, um..., followed by Enter. Your count function should return 2.
+
+#### How to Test test_um.py
+To test your tests, run pytest test_um.py. Try to use correct and incorrect versions of um.py to determine how well your tests spot errors:
+
+- Ensure you have a correct version of um.py. Run your tests by executing pytest test_um.py. pytest should show that all of your tests have passed.
+- Modify the count function in the correct version of um.py. count might, for example, mistakently also count any “um” that is part of a word. Run your tests by executing pytest test_um.py. pytest should show that at least one of your tests has failed.
+- Again modify the count function in the correct version of um.py. count might, for example, mistakenly only match an “um” that is surrounded on either side by a space. Run your tests by executing pytest test_um.py. pytest should show that at least one of your tests has failed.
