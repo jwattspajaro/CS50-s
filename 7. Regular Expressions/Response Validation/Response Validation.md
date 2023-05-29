@@ -18,3 +18,11 @@ Click Homepage to find your way to the library’s documentation.
     pip install validators
 Click Homepage to find your way to the library’s documentation.
 
+#### How to Test
+Here’s how to test your code manually:
+
+- Run your program with python response.py. Ensure your program prompts you for an email, then type malan@harvard.edu, followed by Enter. Your program should output Valid.
+- Run your program with python response.py. Type your own email, followed by Enter. Your program should output Valid.
+- Run your program with python response.py. Type malan@@@harvard.edu, followed by Enter. Your program should output Invalid.
+- Run your program with python response.py. Mistype your own email, including an extra . before .com, for example. Press enter and your program should output Invalid.
+
