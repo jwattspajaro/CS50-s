@@ -26,3 +26,30 @@ def validate(ip):
 if __name__ == "__main__":
     main()
 ```
+Either before or after you implement validate in numb3rs.py, additionally implement, in a file called test_numb3rs.py, two or more functions that collectively test your implementation of validate thoroughly, each of whose names should begin with test_ so that you can execute your tests with:
+
+        pytest test_numb3rs.py
+#### Hints
+Recall that the re module comes with quite a few functions, per https://docs.python.org/3/library/re.html, including search.
+Recall that regular expressions support quite a few special characters, per https://docs.python.org/3/library/re.html#regular-expression-syntax.
+Because backslashes in regular expressions could be mistaken for escape sequences (like \n), best to use Python’s raw string notation for regular expression patterns, else pytest will warn with DeprecationWarning: invalid escape sequence. Just as format strings are prefixed with f, so are raw strings prefixed with r. For instance, instead of "harvard\.edu", use r"harvard\.edu".
+Note that re.search, if passed a pattern with “capturing groups” (i.e., parentheses), returns a “match object,” per https://docs.python.org/3/library/re.html#match-objects, wherein matches are 1-indexed, which you can access individually with group, per https://docs.python.org/3/library/re.html#re.Match.group, or collectively with groups, per https://docs.python.org/3/library/re.html#re.Match.groups.
+
+
+### How to Test
+#### How to Test numb3rs.py
+Here’s how to test numb3rs.py manually:
+
+Run your program with python numb3rs.py. Ensure your program prompts you for an IPv4 address. Type 127.0.0.1, followed by Enter. Your validate function should return True.
+-Run your program with python numb3rs.py. Type 255.255.255.255, followed by Enter. Your validate function should return True.
+-Run your program with python numb3rs.py. Type 512.512.512.512, followed by Enter. Your validate function should return False.
+-Run your program with python numb3rs.py. Type 1.2.3.1000, followed by Enter. Your validate function should return False.
+-Run your program with python numb3rs.py. Type cat, followed by Enter. Your validate function should return False.
+
+#### How to Test test_numb3rs.py
+
+To test your tests, run pytest test_numb3rs.py. Try to use correct and incorrect versions of numb3rs.py to determine how well your tests spot errors:
+
+- Ensure you have a correct version of numb3rs.py. Run your tests by executing pytest test_numb3rs.py. pytest should show that all of your tests have passed.
+- Modify the validate function in the correct version of numb3rs.py. validate might, for example, only check whether the first byte of the IPv4 address is valid. Run your tests by executing pytest test_numb3rs.py. pytest should show that at least one of your tests has failed.
+- Again modify the correct version of numb3rs.py. validate might, for example, mistakenly return True when the user inputs an incorrect IPv4 format. Run your tests by executing pytest test_numb3rs.py. pytest should show that at least one of your tests has failed.
