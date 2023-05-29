@@ -70,3 +70,10 @@ For simplicity, though, no need to mock any state. Implement your tests as you n
     def test_withdraw():
         ...
 ```
+#### How to Test
+Here’s how to test your code manually:
+
+- Open your test_jar.py file and import your Jar class with from jar import Jar. Create a function called test_init, wherein you create a new instance of Jar with jar = Jar(). assert that this jar has the capacity it should, then run your tests with pytest test_jar.py.
+- Add another function to your test_jar.py file called test_str. In test_str, create a new instance of your Jar class and deposit a few cookies. assert that str(jar) prints out as many cookies as have been deposited, then run your tests with pytest test_jar.py.
+- Add another function to your test_jar.py file called test_deposit. In test_deposit, create a new instance of your Jar class and deposit a few cookies. assert that the jar’s size attribute is as large as the number of cookies that have been deposited. Also assert that, if you deposit more than the jar’s capacity, deposit should raise a ValueError. Run your tests with pytest test_jar.py.
+- Add another function to your test_jar.py file called test_withdraw. In test_withdraw, create a new instance of your Jar class and first deposit a few cookies. assert that withdrawing from the jar leaves the appropriate number of cookies in the jar’s size attribute. Also assert that, if you withdraw more than the jar’s size, withdraw should raise a ValueError. Run your tests with pytest test_jar.py.
